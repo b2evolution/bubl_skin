@@ -1,0 +1,394 @@
+/* Designed by François PLANQUE - http://fplanque.net/ */
+
+@import url("../../rsc/css/basic.css");	/* Import basic styles */
+@import url("../../rsc/css/blog_base.css");	/* Default styles for the blog navigation */
+@import url("../../rsc/css/item_base.css");	/* Default styles for the post CONTENT */
+
+body {
+	padding: 0;
+	margin: 0;
+	color: #666;
+	font: 84% Arial, Helvetica, sans-serif;
+	background: #f9fdff url(img/bg.jpg) repeat-x fixed;
+}
+
+a {
+	color: #657f9a;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+h2 {
+	color: #657f9a;
+	font-size: 150%;
+	margin: 12px 0 0 0;
+	font-weight:normal;
+}
+h3 {
+	color: #657f9a;
+	font-size: 125%;
+	font-weight:normal;
+}
+h4 {
+	color: #657f9a;
+	font-size: 110%;
+}
+
+div#wrapper {
+	width: 868px;
+	margin: 16px auto;
+	padding: 0;
+}
+
+div#wrapper2 {
+}
+
+div.pageHeader {
+	background: #e0eef3 url(img/top_banner.jpg) no-repeat center top;
+	height: 105px;
+	margin: 0;
+}
+
+div.pageFooter {
+	clear: both;
+	border-top: 1px solid #b1c5ce;
+	background: #e2f0f5 url("img/footer.gif") no-repeat center bottom;
+	margin: 0;
+	padding: 0 8px;
+}
+
+/*
+ * Header / bloglist on top:
+ */
+div.pageHeader ul {
+	float:right;
+	margin: 54px 5px 0 0;
+	padding: 0;
+	list-style-type:none;
+	padding: 8px 0;
+}
+div.pageHeader li {
+	display: inline;
+	padding: 0 2ex 0 0;
+}
+div.pageHeader li a {
+	font-weight: bold;
+	color: #9fb3d1;
+}
+div.pageHeader li a:hover {
+	text-decoration: underline;
+}
+div.pageHeader li a.selected {
+	color: #657f9a;
+}
+
+div.pageHeader div.widget_core_coll_logo h1 {
+	margin: 0;
+	padding: 0;
+}
+
+div.pageHeader div.widget_core_coll_title h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0 0 0 10px;
+	padding: 17px 0 0 0;
+	line-height: 1.22 em;
+	font-variant: small-caps;
+	text-transform: none;
+}
+div.pageHeader div.widget_core_coll_title h1 a {
+	color: #657f9a;
+	text-decoration: none;
+}
+div.pageHeader div.widget_core_coll_tagline {
+	color: #657f9a;
+	letter-spacing: 2px;
+	margin: 3px 0 0 13px;
+}
+
+
+div.page_main_area {
+	background-color: #fff;
+	background-image: url(img/main_fade.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+p.baseline {
+	text-align: center;
+	font-size: 76%;
+	color: #777;
+	padding: 1ex;
+	margin: 0;
+}
+p.baseline a,
+p.baseline a {
+	color: #888;
+	text-decoration: none;
+}
+p.baseline a:hover {
+	text-decoration: underline;
+}
+
+div.action_messages {
+	margin: 0;
+}
+
+
+/* Styles for posts */
+.main_wide {
+	overflow: hidden;
+	margin: 0 28px;
+	padding: 59px 0 0 0;
+}
+
+.bPosts {
+	float: left;
+	width: 648px;
+	overflow: hidden;
+	margin: 30px 0 0 28px;
+	padding: 0;
+}
+.bPost, .bPostpublished
+{
+	clear: both;
+	margin: 0 0 6ex;
+	padding: 0;
+	/*background-color:#00FF33; */
+}
+
+.image_block {
+	margin-bottom: 1ex;
+}
+td.image {
+	width: 648px;
+	height: 488px;
+	vertical-align: middle;
+}
+.shadow_b {
+	background: url(../../rsc/shadow/gw8-b.gif) repeat-x bottom;
+	margin: auto;
+}
+.shadow_r {
+	background: url(../../rsc/shadow/gw8-r.gif) repeat-y right;
+}
+.shadow_tr {
+	background: url(../../rsc/shadow/gw8-tr.gif) no-repeat right top;
+}
+.shadow_bl {
+	background: url(../../rsc/shadow/gw8-bl.gif) no-repeat left bottom;
+}
+.shadow_br {
+	padding: 0 8px 8px 0;
+	background: url(../../rsc/shadow/gw8-br.gif) no-repeat right bottom;
+}
+.image_block img {
+	border: 1px solid #cecece;
+}
+
+.bDetails {
+	clear: both;
+}
+.bTitle {
+	font-size: 125%;
+	margin: 0;
+}
+.bText {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.bSmallPrint
+{
+	font-size: 84%;
+}
+.action_right
+{
+	font-size: 84%;
+	float: right;
+	margin: 0 8px;
+}
+
+div.bComment {
+	border: 1px solid #657f9a;
+	background-color:	#EBF7FD;
+	margin: 1ex 0 2ex 5ex;
+}
+div.moderation_msg {
+	margin: 1ex 0 2ex 5ex;
+}
+
+
+form.bComment {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+input.bComment,
+textarea.bComment
+{
+	background-color: #fff;
+	border: 1px solid #657f9a;
+	width: 97%;
+	padding: 2px;
+	margin: 0ex;
+}
+select.bComment  /* Used by the profile form */
+{
+	background-color: #fff;
+	border: 1px solid #657f9a;
+	padding: 1px;
+	margin: 0ex;
+}
+
+
+/* Styles for sidebar (right) */
+.bSideBar {
+	/* background-color: #fcc; */
+	margin: 0 19px 0 0;
+	padding: 45px 0 0 0;
+	width: 145px;
+	float: right;
+	overflow: hidden;
+}
+
+.bSideItem {
+	margin: 0 0 2ex 0;
+	padding: 0;
+}
+
+.bFootItem {
+	margin: 16px 8px;
+	padding: 0;
+}
+
+.bFootItem {
+	float: left;
+}
+
+.bSideItem h3,
+.bFootItem h3 {
+	margin: 0;
+	padding: 0;
+}
+.bSideItem ul {
+	font-size: 92%;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.bSideItem ul ul {
+	font-size: 100%;
+	margin-left: 8px;
+	padding-left: 12px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.bFootItem ul {
+	font-size: 92%;
+	margin-left: 8px;
+	padding-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.bFootItem ul ul {
+	font-size: 100%;
+	margin-left: 8px;
+	padding-left: 8px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.bSideItem li {
+	margin: 8px 0;
+	padding: 2px 1ex;
+	background: url(img/shade_gray.gif) repeat-x;
+	list-style: none;
+}
+.bSideItem li.selected {
+	background: url(img/shade_blue.gif) repeat-x;
+}
+
+.bSideItem li.selected li,
+.bSideItem li li.selected,
+.bSideItem li li {
+	margin: 0;
+	padding: 0;
+	list-style-image: url(img/bull.gif);
+	background: url(none);
+}
+.bFootItem li  {
+	list-style-image: url(img/bull.gif);
+}
+
+.bSideItem li a,
+.bFootItem li a  {
+	color: #666;
+}
+.bSideItem li a:hover,
+.bFootItem li a:hover  {
+	color: #26aae8;
+}
+
+.bSideItem li.selected {
+	font-weight: bold;
+}
+
+form.search
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin: 1ex 0;
+}
+input.SearchField
+{
+	background-color: #fff;
+	border: 1px solid #657f9a;
+	padding: 2px;
+	width: 120px;
+	height: 16px;
+	margin: 0ex;
+}
+
+/* Calendar: */
+table.bCalendarTable {
+	width: 100%;
+	border: 1px solid #999;
+}
+table.bCalendarTable caption {
+	text-transform:uppercase;
+	border-bottom: 0;
+	border: 1px solid #999;
+	border-bottom: 0;
+}
+th.bCalendarHeaderCell {
+	text-transform:uppercase;
+	color: #999;
+}
+table.bCalendarTable tfoot a {
+	text-decoration: none;
+}
+table.bCalendarTable tfoot a:hover {
+	background-color: #26aae8;
+	color: #fff;
+}
+#bCalendarToday {
+	background-color: #26aae8;
+	color: #fff;
+}
+#bCalendarToday a {
+	color: #fff;
+}
+
+ul.main_nav_links {
+	margin-top: 3ex;
+	margin-bottom: 3ex
+}
+ul.main_nav_links li {
+	margin-top: .5ex;
+	margin-bottom: .5ex;
+}
